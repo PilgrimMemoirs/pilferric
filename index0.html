@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="dist/index.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #222">
+      <a-assets>
+        <a-mixin
+          id="marker"
+          geometry="primitive: plane; width: 0.02; height: 0.02"
+          material="color: red"
+        ></a-mixin>
+
+        <img id="jbl" src="public/images/jbl.jpg">
+
+        <a-asset-item id="fireplace-obj" src="public/models/fireplace/am.obj"></a-asset-item>
+        <a-asset-item id="fireplace-mtl" src="public/models/fireplace/am.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-entity mixin="marker" position="-2.5 0.7 0.01"></a-entity>
+
+      <a-box id="box" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+
+      <!-- Animations. -->
+      <a-entity id="opacity" position="-2.5 0.7 0"
+                text="color: white; align: center; value: Animating opacity; width: 1.5">
+      </a-entity>
+      <a-entity mixin="marker" position="0 0.7 0.01"></a-entity>
+      <a-entity id="color" position="0 0.7 0"
+                text="color: white; align: center; value: Animating color; width: 1.5">
+      </a-entity>
+      <a-entity mixin="marker" position="2.5 0.7 0.01"></a-entity>
+      <a-entity id="size" position="2.5 0.7 0"
+                text="color: white; align: center; value: Animating size; width: 1.5">
+      </a-entity>
+
+      <!-- Anchors. -->
+      <a-entity mixin="marker" position="-2.5 1 0.01"></a-entity>
+      <a-entity position="-2.5 1 0"
+                text="anchor: left; width: 1.5; color: white; value: [LEFT ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+      <a-entity mixin="marker" position="0 1 0.01"></a-entity>
+      <a-entity position="0 1 0"
+                text="anchor: center; width: 1.5; color: white; value: [CENTER ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+      <a-entity mixin="marker" position="2.5 1 0.01"></a-entity>
+      <a-entity position="2.5 1 0"
+                text="anchor: right; width: 1.5; color: white; value: [RIGHT ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+
+      <!-- Display name -->
+      <a-entity
+        position="-0.4 2.7 0"
+        geometry="primitive: plane; width: auto; height: auto"
+        material="opacity: 0;"
+        text="color: white; align: left; width: 2; value: John Brian Losh ">
+      </a-entity>
+
+      <a-entity
+        position="-0.65 2.6 0"
+        geometry="primitive: plane; width: auto; height: auto"
+        material="opacity: 0;"
+        text="color: white; align: left; width: 1.5; value: Chairman/Designated Broker">
+      </a-entity>
+
+      <!-- Spacing. -->
+      <!--
+      <a-entity mixin="marker" position="-1 2.5 0.01"></a-entity>
+      <a-entity position="-0.5 2.5 0"
+                text="width: 2; color: white; value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+
+      <a-entity mixin="marker" position="-1 2 0.01"></a-entity>
+      <a-entity position="-1 2 0"
+                text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: [LINE AND LETTER SPACING] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+      -->
+
+      <!-- Alignments. -->
+      <!--
+      <a-entity position="2 2 0">
+        <a-entity mixin="marker" position="0 0 0.01"></a-entity>
+        <a-entity position="0 0 0" geometry="primitive: plane; width: auto; height: auto" material="color: #333"
+                  text="color: yellow; align: left; value: [LEFT ALIGNED]; width: 2; ">
+        </a-entity>
+        <a-entity mixin="marker" position="0 0.2 0.01"></a-entity>
+        <a-entity position="0 0.2 0" geometry="primitive: plane; width: auto; height: auto" material="color: #333"
+                  text="color: red; align: right; value: [RIGHT ALIGNED]; width: 2; ">
+        </a-entity>
+        <a-entity mixin="marker" position="0 0.4 0.01"></a-entity>
+        <a-entity position="0 0.4 0" geometry="primitive: plane; width: auto; height: auto" material="color: #eee"
+                  text="color: blue; align: center; value: [CENTER ALIGNED]; width: 2; ">
+        </a-entity>
+      </a-entity>
+      -->
+
+      <a-plane
+        src="#jbl"
+        height="1.53314917"
+        width="1"
+        rotation="0 0 0"
+        position="-2 2 0"
+      >
+      </a-plane>
+
+      <a-entity
+        position="3 0 8"
+        scale="0.02 0.02 0.02"
+        rotation="0 0 0"
+        obj-model="obj: #fireplace-obj; mtl: #fireplace-mtl">
+      </a-entity>
+
+      <a-entity position="0 1.8 2">
+        <a-entity camera look-controls wasd-controls></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
