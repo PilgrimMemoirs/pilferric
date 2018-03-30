@@ -5,24 +5,35 @@
  </head>
  <body>
    <a-scene>
-     <!-- BEAR -->
 
-     <a-image
-        src='public/images/bear/bear1.png'
-        position="-22 1.40 -15"
-        rotation="0 0 0"
-        width="3"
-        height="3"></a-image>
+    <!-- SPAWN POINT -->
+    <!-- <a-entity camera gamepad-controls position="-22 1.25 -9"></a-entity> -->
 
-        <a-image
-           src='public/images/bear/bear1.png'
-           position="114.390 1.453 24.322"
-           rotation="0 -115.560 0"
-           width="3"
-           height="3"></a-image>
+     <a-assets>
+       <a-asset-item id="islands" src="./public/models/fantasy_islands/scene.gltf"></a-asset-item>
+     </a-assets>
 
-      <!-- Lawyer Card-->
-  <a-entity position="-29 1.40 -16" geometry="primitive: plane; height: 10.5; width: 7;" material="color: black;">
+    <!-- Island -->
+    <a-entity gltf-model="#islands"></a-entity>
+    <a-sky color="gray"></a-sky>
+
+    <!-- BEAR -->
+    <a-image
+      src='public/images/bear/bear1.png'
+      position="-22 1.40 -15"
+      rotation="0 0 0"
+      width="3"
+      height="3"></a-image>
+
+    <a-image
+       src='public/images/bear/bear1.png'
+       position="114.390 1.453 24.322"
+       rotation="0 -115.560 0"
+       width="3"
+       height="3"></a-image>
+
+    <!-- Lawyer Card-->
+    <a-entity position="-29 1.40 -16" geometry="primitive: plane; height: 10.5; width: 7;" material="color: black;">
       <a-image
             src='public/images/lawyers/lance_palmer.jpg'
             height="2"
@@ -74,6 +85,8 @@
             width=".35"
             height=".35"
             ></a-image>
+
+    </a-box>
     </a-entity>
 
     <a-entity position="127.538 1.608 -0.456" rotation="0 -71.490 0" geometry="primitive: plane; height: 10.5; width: 7;" material="color: black;">
@@ -268,15 +281,149 @@
        </a-image>
 
 
-            <!-- SPAWN POINT -->
-     <a-entity camera gamepad-controls position="-22 1.25 -9"></a-entity>
 
-     <div id="lawyer-list"></div>
 
-     <!-- Island -->
-     <a-gltf-model src="./public/models/fantasy_islands/scene.gltf"></a-gltf-model>
 
-     <a-sky color="salmon"></a-sky>
+    <!-- LAND OF UNCLAIMED LAWYERS -->
+    <a-box position="171 4 -349">
+      <a-image
+            src='public/images/lawyers/unclaimed.svg'
+            height="10"
+            width="10"
+            rotation="0 0 0"
+            position="0 4 .2"
+          ></a-image>
+    </a-box>
+
+    <a-box position="177 4 -319">
+      <a-image
+            src='public/images/lawyers/unclaimed.svg'
+            height="10"
+            width="10"
+            rotation="0 0 0"
+            position="0 4 .2"
+          ></a-image>
+    </a-box>
+
+    <a-box position="140 10 -360">
+      <a-image
+            src='public/images/lawyers/unclaimed.svg'
+            height="10"
+            width="10"
+            rotation="0 0 0"
+            position="0 4 .2"
+          ></a-image>
+    </a-box>
+
+
+    <a-box position="175 10 -379">
+      <a-image
+            src='public/images/lawyers/unclaimed.svg'
+            height="10"
+            width="10"
+            rotation="0 0 0"
+            position="0 4 .2"
+          ></a-image>
+    </a-box>
+    <!-- LAND OF NO UX -->
+
+    <a-entity position="-43 -10 73" rotation="0 -71.490 0" geometry="primitive: plane; height: 10.5; width: 7;" material="color: black;">
+        <a-image
+              src='public/images/lawyers/kevin.png'
+              height="15"
+              width="20"
+              rotation="2 4 0"
+              position="0 9 0.01"
+            ></a-image>
+
+            <a-image
+                  src='public/images/fireplace.png'
+                  height="5"
+                  width="10"
+                  rotation="0 -50 0"
+                  position="-5.5 3 -4.29"
+                ></a-image>
+
+            <a-image
+                  src='public/images/lawyers/bear_skin_rug.png'
+                  height="15"
+                  width="15"
+                  rotation="90 -20 0"
+                  position="1 .5 -3"
+                ></a-image>
+
+
+            <
+
+            <a-image
+              src='public/images/star.png'
+              position="4.35 4.4 -11"
+              width=".5"
+              height=".5"
+              ></a-image>
+            <a-image
+              src='public/images/star.png'
+              position="3.35 4.4 -11"
+              width=".5"
+              height=".5"
+              ></a-image>
+            <a-image
+              src='public/images/star.png'
+              position="2.35 4.4 -11"
+              width=".5"
+              height=".5"
+              ></a-image>
+            <a-image
+              src='public/images/star.png'
+              position="1.35 4.4 -11"
+              width=".5"
+              height=".5"
+              ></a-image>
+            <a-image
+              src='public/images/star.png'
+              position=".35 4.4 -11"
+              width=".5"
+              height=".5"
+              ></a-image>
+      </a-entity>
+
+    <!-- BEAR ISLAND -->
+
+    <a-image
+       src='public/images/bear/bear1.png'
+       position="-182 208 -183"
+       rotation="0 0 0"
+       width="10"
+       height="10"></a-image>
+
+     <a-image
+        src='public/images/bear/bear1.png'
+        position="-189 208 -227"
+        rotation="0 0 0"
+        width="10"
+        height="10"></a-image>
+
+    <a-image
+       src='public/images/bear/bear1.png'
+       position="-150 208 -218"
+       rotation="0 0 0"
+       width="10"
+       height="10"></a-image>
+
+     <a-image
+        src='public/images/bear/bear1.png'
+        position="-165 208 -174"
+        rotation="0 0 0"
+        width="10"
+        height="10"></a-image>
+
+      <a-image
+         src='public/images/bear/bear1.png'
+         position="-169 208 -211"
+         rotation="0 0 0"
+         width="10"
+         height="10"></a-image>
+
    </a-scene>
  </body>
 </html>
