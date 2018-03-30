@@ -5,6 +5,20 @@
  </head>
  <body>
    <a-scene>
+
+            <!-- SPAWN POINT -->
+     <!-- <a-entity camera gamepad-controls position="-22 1.25 -9"></a-entity> -->
+
+     <a-assets>
+       <a-asset-item id="islands" src="./public/models/fantasy_islands/scene.gltf"></a-asset-item>
+     </a-assets>
+
+    <!-- Island -->
+     <a-entity gltf-model="#islands"></a-entity>
+     <a-sky color="#ECECEC"></a-sky>
+
+
+
      <!-- BEAR -->
 
      <a-image
@@ -62,28 +76,54 @@
             width=".35"
             height=".35"
             ></a-image>
-
-
-
-
-
     </a-box>
 
-            <!-- SPAWN POINT -->
-     <a-entity camera gamepad-controls position="-22 1.25 -9"></a-entity>
 
-     <a-assets>
-       <a-asset-item id="islands" src="./public/models/fantasy_islands/scene.gltf"></a-asset-item>
-     </a-assets>
-     <a-entity gltf-model="#head"></a-entity>
+    <!-- LAND OF UNCLAIMED LAWYERS -->
+    <a-box position="171 4 -349">
+      <a-image
+            src='public/images/lawyers/unclaimed.svg'
+            height="10"
+            width="10"
+            rotation="0 0 0"
+            position="0 4 .2"
+          ></a-image>
+    </a-box>
 
-     <div id="lawyer-list"></div>
 
-     <!-- Island -->
-     <a-gltf-model src="./public/models/fantasy_islands/scene.gltf"></a-gltf-model>
+    <a-box position="177 4 -319">
+      <a-image
+            src='public/images/lawyers/unclaimed.svg'
+            height="10"
+            width="10"
+            rotation="0 0 0"
+            position="0 4 .2"
+          ></a-image>
+    </a-box>
 
-     <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
-     <a-sky color="#ECECEC"></a-sky>
+    <a-box position="140 10 -360">
+      <a-image
+            src='public/images/lawyers/unclaimed.svg'
+            height="10"
+            width="10"
+            rotation="0 0 0"
+            position="0 4 .2"
+          ></a-image>
+    </a-box>
+
+    <!-- LAND OF NO UX -->
+
+
+    <!-- BEAR ISLAND -->
+
+    <a-image
+       src='public/images/bear/bear1.png'
+       position="-22 1.40 -15"
+       rotation="0 0 0"
+       width="3"
+       height="3"></a-image>
+
+
    </a-scene>
  </body>
 </html>
