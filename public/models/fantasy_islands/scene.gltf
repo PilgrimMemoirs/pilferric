@@ -4260,76 +4260,76 @@
   ],
   "images": [
     {
-      "uri": "textures/IslandHouseShape_baseColor.jpg"
+      "uri": "./textures/IslandHouseShape_baseColor.jpg"
     },
     {
-      "uri": "textures/MimicShape_baseColor.jpg"
+      "uri": "./textures/MimicShape_baseColor.jpg"
     },
     {
-      "uri": "textures/MimicShape_metallicRoughness.png"
+      "uri": "./textures/MimicShape_metallicRoughness.png"
     },
     {
-      "uri": "textures/MimicShape_emissive.jpg"
+      "uri": "./textures/MimicShape_emissive.jpg"
     },
     {
-      "uri": "textures/IslaAShape_baseColor.jpg"
+      "uri": "./textures/IslaAShape_baseColor.jpg"
     },
     {
-      "uri": "textures/IslaAShape_metallicRoughness.png"
+      "uri": "./textures/IslaAShape_metallicRoughness.png"
     },
     {
-      "uri": "textures/bridgeShape_baseColor.jpg"
+      "uri": "./textures/bridgeShape_baseColor.jpg"
     },
     {
-      "uri": "textures/bridgeShape_metallicRoughness.png"
+      "uri": "./textures/bridgeShape_metallicRoughness.png"
     },
     {
-      "uri": "textures/AguatorreShape_baseColor.jpg"
+      "uri": "./textures/AguatorreShape_baseColor.jpg"
     },
     {
-      "uri": "textures/AguatorreShape_metallicRoughness.png"
+      "uri": "./textures/AguatorreShape_metallicRoughness.png"
     },
     {
-      "uri": "textures/TorreShape_baseColor.jpg"
+      "uri": "./textures/TorreShape_baseColor.jpg"
     },
     {
-      "uri": "textures/TorreShape_metallicRoughness.png"
+      "uri": "./textures/TorreShape_metallicRoughness.png"
     },
     {
-      "uri": "textures/IslaDragonShape_emissive.jpg"
+      "uri": "./textures/IslaDragonShape_emissive.jpg"
     },
     {
-      "uri": "textures/IslaDragonShape_metallicRoughness.png"
+      "uri": "./textures/IslaDragonShape_metallicRoughness.png"
     },
     {
-      "uri": "textures/IslaDragonShape_normal.png"
+      "uri": "./textures/IslaDragonShape_normal.png"
     },
     {
-      "uri": "textures/IslaDragonShape_baseColor.jpg"
+      "uri": "./textures/IslaDragonShape_baseColor.jpg"
     },
     {
-      "uri": "textures/IslandHouse_1Shape_metallicRoughness.png"
+      "uri": "./textures/IslandHouse_1Shape_metallicRoughness.png"
     },
     {
-      "uri": "textures/IslandHouse_1Shape_normal.png"
+      "uri": "./textures/IslandHouse_1Shape_normal.png"
     },
     {
-      "uri": "textures/IslandHouse_1Shape_baseColor.jpg"
+      "uri": "./textures/IslandHouse_1Shape_baseColor.jpg"
     },
     {
-      "uri": "textures/IslaGolemShape_baseColor.png"
+      "uri": "./textures/IslaGolemShape_baseColor.png"
     },
     {
-      "uri": "textures/IslaGolemShape_metallicRoughness.png"
+      "uri": "./textures/IslaGolemShape_metallicRoughness.png"
     },
     {
-      "uri": "textures/IslaGolemShape_emissive.jpg"
+      "uri": "./textures/IslaGolemShape_emissive.jpg"
     },
     {
-      "uri": "textures/dragonShape_baseColor.jpg"
+      "uri": "./textures/dragonShape_baseColor.jpg"
     },
     {
-      "uri": "textures/dragonShape_metallicRoughness.png"
+      "uri": "./textures/dragonShape_metallicRoughness.png"
     }
   ],
   "materials": [
